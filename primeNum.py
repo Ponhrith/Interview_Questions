@@ -1,7 +1,6 @@
 firstNum = 1
 secondNum = 100
 
-
 for betNum in range (firstNum, secondNum+1):
     if betNum > 1:
         for primeNum in range (2, betNum):
@@ -9,5 +8,6 @@ for betNum in range (firstNum, secondNum+1):
                 break
         else:
             print(betNum)
-        
-        
+
+
+       
