@@ -1,16 +1,16 @@
-firstNum = 1
-secondNum = 100
-amount = 0
+# firstNum = 1
+# secondNum = 100
+# amount = 0
 
-for betNum in range (firstNum, secondNum+1):
-    if betNum > 1:
-        for primeNum in range (2, betNum):
-            if betNum % primeNum == 0:
-                break
-        else:
-            print(betNum)
-            amount = amount + 1
-print("The amount of prime number is:", amount)
+# for betNum in range (firstNum, secondNum+1):
+#     if betNum > 1:
+#         for primeNum in range (2, betNum):
+#             if betNum % primeNum == 0:
+#                 break
+#         else:               # else is the property of for, only when you use break
+#             print(betNum)
+#             amount = amount + 1
+# print("The amount of prime number is:", amount)
 
 
 # amount = 0
@@ -19,3 +19,27 @@ print("The amount of prime number is:", amount)
 #          print(num)
         #  amount = amount + 1
 # print(amount)
+
+
+#-------------------------------------------------------------------------------
+
+firstNum = 1
+secondNum = 100
+amount = 0
+prime = True
+
+for betNum in range (firstNum, secondNum+1):
+    if betNum > 1:
+        for primeNum in range (2, betNum):
+            if betNum % primeNum == 0:
+                prime = False
+                break
+        if(prime):           
+            print(betNum)
+            amount = amount + 1
+        
+        prime = True
+print("The amount of prime number is:", amount)
+
+#-------------------------------------------------------------------------------
+
