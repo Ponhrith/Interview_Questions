@@ -41,5 +41,5 @@ for betNum in range (firstNum, secondNum+1):
         prime = True
 print("The amount of prime number is:", amount)
 
-#-------------------------------------------------------------------------------
+
 
